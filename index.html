@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Le Charme</title>
+</head>
+
+<body>
+    <div class="background">
+    </div> <!--background-->
+    <header>
+
+        <nav class="navbar navbar-expand-lg menu    ">
+            <div class="container"> <!-- centers Navbar elements in a container -->
+
+                <a class="navbar-brand" href="#">Le Charme</a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto"><!-- ml-auto shifts nav items to right -->
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="modal" data-target="#exampleModal"><i
+                                    class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+        <section class="cover-image" style="margin-bottom: 5%;">
+
+            <div class="row" style="text-align: center;align-items: center; height: 800px;color: white;">
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-8">
+                    <h1 style="font-size: 80px;">Check our new coquette collection!</h1>
+                    <h3 style="font-size: 45px;">new sizes available</h3>
+                </div>
+            </div>
+
+        </section>
+
+
+        <div class="container" style="margin-bottom: 5%;">
+
+            <div class="container gallery-container">
+
+                <h1 class="text-center">New Collection</h1>
+                <br>
+                <div class="tz-gallery">
+
+                    <div class="row mb-3">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <a class="lightbox">
+                                    <img src="./pics/vestido-1.png" alt="Park" class="card-img-top">
+                                </a>
+                                <button id="meuBotao" class="btn btn-dark"><i class="fa fa-cart-plus"
+                                        aria-hidden="true"></i>Add to cart</button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card">
+                                <a class="lightbox">
+                                    <img src="./pics/vestido-3.png" alt="Park" class="card-img-top">
+                                </a>
+                                <button id="meuBotao" class="btn btn-dark"><i class="fa fa-cart-plus"
+                                        aria-hidden="true"></i>Add to cart</button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card">
+                                <a class="lightbox">
+                                    <img src="./pics/vestido-2.png" alt="Park" class="card-img-top">
+                                </a>
+                                <button id="meuBotao" class="btn btn-dark"><i class="fa fa-cart-plus"
+                                        aria-hidden="true"></i>Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <a class="lightbox">
+                                    <img src="./pics/cardigan.png" alt="Park" class="card-img-top">
+                                </a>
+                                <button id="meuBotao" class="btn btn-dark"><i class="fa fa-cart-plus"
+                                        aria-hidden="true"></i>Add to cart</button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card">
+                                <a class="lightbox">
+                                    <img src="./pics/moletom-preto.png" alt="Park" class="card-img-top">
+                                </a>
+                                <button id="meuBotao" class="btn btn-dark"><i class="fa fa-cart-plus"
+                                        aria-hidden="true"></i>Add to cart</button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card">
+                                <a class="lightbox">
+                                    <img src="./pics/blusa-branca.png" alt="Park" class="card-img-top">
+                                </a>
+                                <button id="meuBotao" class="btn btn-dark"><i class="fa fa-cart-plus"
+                                        aria-hidden="true"></i>Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <a class="lightbox">
+                                    <img src="./pics/saia-preta.png" alt="Park" class="card-img-top">
+                                </a>
+                                <button id="meuBotao" class="btn btn-dark"><i class="fa fa-cart-plus"
+                                        aria-hidden="true"></i>Add to cart</button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card">
+                                <a class="lightbox">
+                                    <img src="./pics/saia-branca.png" alt="Park" class="card-img-top">
+                                </a>
+                                <button id="meuBotao" class="btn btn-dark"><i class="fa fa-cart-plus"
+                                        aria-hidden="true"></i>Add to cart</button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card">
+                                <a class="lightbox">
+                                    <img src="./pics/saia-corrente.png" alt="Park" class="card-img-top">
+                                </a>
+                                <button id="meuBotao" class="btn btn-dark"><i class="fa fa-cart-plus"
+                                        aria-hidden="true"></i>Add to cart</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <h1 class="text-center">About Us</h1>
+            <br>
+            <div class="row" style="align-items: center;">
+                <div class="col-md-6">
+                    <h1 class="text-center">title</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eleifend consectetur ante id
+                        sagittis. Praesent vestibulum dui quis ex accumsan varius. Nulla sit amet dictum lorem, vel
+                        convallis quam. Vestibulum odio velit, sodales quis pharetra vel, accumsan sit amet nunc. Donec
+                        nunc risus, lacinia in consequat a, pellentesque quis eros. In luctus nibh sem, at tincidunt
+                        sapien consectetur sed. Nunc turpis dolor, aliquam quis vestibulum a, bibendum nec quam. Quisque
+                        consequat molestie interdum. Sed sit amet diam aliquam, consequat nibh ut, finibus purus.
+                        Aliquam feugiat mauris et lectus condimentum, vel auctor sapien varius. Maecenas hendrerit
+                        dictum mi, in tincidunt erat feugiat in. In tempus sagittis nisl sed tempus.
+
+                        Nulla lorem leo, scelerisque eget felis vitae, lobortis semper risus. Quisque ac urna vel orci
+                        consequat fermentum. Aenean sagittis, urna a pulvinar facilisis, nibh lorem semper purus, sed
+                        venenatis lectus magna eget leo. Pellentesque dapibus ligula sed velit maximus eleifend. Nullam
+                        imperdiet, lorem in iaculis elementum, magna magna dignissim sem, eu mattis mauris nulla ac
+                        tellus. Cras vel enim orci. Vestibulum sagittis iaculis egestas. Sed sit amet iaculis erat. In
+                        nec interdum nisi, ut porttitor elit. Integer viverra lacus non est volutpat, non sodales eros
+                        commodo. Pellentesque iaculis rhoncus orci nec vestibulum. Curabitur tincidunt sagittis metus.
+                        Suspendisse potenti.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="./pics/aboutus.png" height="600px" style="border-radius: 20px 20px 20px 20px;">
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <footer>
+            <div class="footer-top">
+                <div class="container">
+                    <div class="footer-day-time">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <ul>
+                                    <li>Opening Hours: Mon - Friday: 8AM - 5PM</li>
+                                    <li>Sunday: 8:00 AM - 12:00 PM</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+
+                            <h4>About us</h4>
+                            <p>Lorem Ipsum ist einfach Dummy-Text der Druck- und Satzindustrie. Lorem Ipsum war der
+                                Standard der Branche Lorem Ipsum ist einfach Dummy-Text der Druck- und Satzindustrie.
+                                Lorem Ipsum war der Standard der Branche </p>
+
+                        </div>
+
+                        <div class="col-md-4">
+                            <h4>Information</h4>
+                            <ul class="address1">
+                                <li><i class="fa fa-map-marker"></i>Lorem Ipsum 132 xyz Lorem Ipsum</li>
+                                <li><i class="fa fa-envelope"></i><a href="mailto:#">info@test.com</a></li>
+                                <li><i class="fa fa-mobile" aria-hidden="true"></i> <a href="tel:12 34 56 78 90">12 34
+                                        56 78 90</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-4">
+                            <h4>Follow us</h4>
+                            <ul class="social-icon">
+                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
